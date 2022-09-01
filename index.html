@@ -3,13 +3,14 @@
   <title>Survey form using flex</title>
   <link rel="stylesheet" href="css/styles.css.css" />
   <body>
+    <div class="main-container">
     <header class="header">
       <h1 class="h1style">Follow Up Survey</h1>
     </header>
     <!--first a container for all divisions then each question has it's own division-->
     
-    <div class="main-container">
-        <div>
+    
+       <!-- <div>
             <table>
                 <tr>
                     <td><p>When did you use our survey?</p></td>
@@ -23,8 +24,19 @@
                   <td><p class="datelabel">Date</p></td>
               </tr>
             </table>
-        </div>
-      
+        </div>-->
+        <div class="flex">
+          <div class="item">
+            <p>When did you use our survey?</p>
+            <input class="tx" type="date" id="date" name="date" value="2022-08-30" />
+            <p class="datelabel">Date</p>
+          </div>
+          <div class="item">
+            <p>Name the product or service</p>
+            <input class="tx" type="text" id="name" name="name" />
+          </div>
+        </div><br/>
+      <br/><br/>
 
       <p>Overall, how satisfied are you with the product or service?</p>
       <div class="flex">
@@ -225,7 +237,7 @@
       id="comment"
       name="comment"
       rows="10"
-      cols="60"
+      cols="70"
       placeholder="type here.."
     ></textarea>
     <div class="button">
