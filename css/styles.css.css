@@ -21,6 +21,10 @@ body{
     padding: 10px;
     background-color:   rgb(177, 174, 174);
 }
+.datelabel{
+    color: rgb(138, 130, 130);
+   
+}
 .flex{
     display: flex;
     /*background: green;*/
