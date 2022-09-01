@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <title>Survey form using flex</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <header class="header">
+      <h1 class="h1style">Follow Up Survey</h1>
+    </header>
+    <!--first a container for all divisions then each question has it's own division-->
+    
+    <div class="main-container">
+        <div>
+            <table>
+                <tr>
+                    <td><p>When did you use our survey?</p></td>
+                    <td><p>Name the product or service</p></td>
+                </tr>
+                <tr>
+                    <td><input class="tx" type="date" id="date" name="date" value="2022-08-30" /></td>
+                    <td><input class="tx" type="text" id="name" name="name" /></td>
+                </tr>
+                
+            </table>
+        </div>
+      <!--<p>
+        When did you use our survey? &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         Name the product or service
+      </p>
+      <div class="flex">
+        <div class="item">
+          <input class="tx" type="date" id="date" name="date"  /><br/>
+          <label class="datelabel" for="verysatisfied">Date</label><br />
+        </div>
+       
+        <div class="item">
+           
+          <input class="tx" type="text" id="name" name="name" />
+        </div>
+      </div>-->
+
+      <p>Overall, how satisfied are you with the product or service?</p>
+      <div class="flex">
+        <div class="item">
+          <input
+            class="radioitem"
+            type="radio"
+            id="verysatisfied"
+            name="opinion"
+            value="very satisfied"
+          />
+          <label for="verysatisfied">very satisfied</label><br />
+          <input
+            class="radioitem"
+            type="radio"
+            id="neutral"
+            name="opinion"
+            value="Neutral"
+          />
+          <label for="neutral">Neutral</label><br />
+          <input
+            class="radioitem"
+            type="radio"
+            id="notverysatisfied"
+            name="opinion"
+            value="very unsatisfied"
+          />
+          <label for="notverysatisfied">Very Unsatisfied</label>
+        </div>
+
+        <div class="item">
+          <input
+            class="radioitem"
+            type="radio"
+            id="satisfied"
+            name="opinion"
+            value="Satisfied"
+          />
+          <label for="satisfied">Satisfied</label><br />
+          <input
+            class="radioitem"
+            type="radio"
+            id="unsatisfied"
+            name="opinion"
+            value="unsatisfied"
+          />
+          <label for="unsatisfied">Unsatisfied</label><br />
+          <input
+            class="radioitem"
+            type="radio"
+            id="none"
+            name="opinion"
+            value="none"
+          />
+          <label for="none">N/A</label>
+        </div>
+      </div>
+      <br />
+
+      <p>Did our product or service meet your expectations?</p>
+      <div class="flex">
+        <div class="item">
+          <input
+            class="radioitem"
+            type="radio"
+            id="ans"
+            name="ans"
+            value="Yes"
+          />
+          <label for="ans">Yes</label>
+        </div>
+        <div class="item">
+          <input
+            class="radioitem"
+            type="radio"
+            id="ans-"
+            name="ans"
+            value="no"
+            checked="true"
+          />
+          <label for="ans-">No</label>
+        </div>
+      </div>
+
+      <p>Would you recommend this product or service to a friend?</p>
+      <div class="flex">
+        <div class="item">
+          <input
+            class="radioitem"
+            type="radio"
+            id="ans"
+            name="ans"
+            value="Yes"
+            
+          />
+          <label for="ans">Yes</label><br />
+        </div>
+        <div class="item">
+          <input
+            class="radioitem"
+            type="radio"
+            id="ans-"
+            name="ans"
+            value="no"
+            checked="true"
+          />
+          <label for="ans-">No</label><br />
+        </div>
+      </div>
+
+      <p>What aspect of the product por service were you most satisfied by?</p>
+      <div class="flex">
+        <div class="item">
+          <input
+            class="radioitem"
+            type="radio"
+            id="quality"
+            name="mostfav"
+            value="quality"
+          />
+          <label for="quality">Quality</label><br />
+          <input
+            class="radioitem"
+            type="radio"
+            id="CustomerService"
+            name="mostfav"
+            value="CustomerService"
+          />
+          <label for="CustomerService">Customer Service</label><br />
+        </div>
+        <div class="item">
+          <input
+            class="radioitem"
+            type="radio"
+            id="price"
+            name="mostfav"
+            value="price"
+          />
+          <label for="price">Price</label><br />
+          <input
+            class="radioitem"
+            type="radio"
+            id="insOrUse"
+            name="mostfav"
+            value="insOrUse"
+          /><label for="insOrUse">Installation or first use experience</label
+          ><br /><br />
+        </div>
+      </div>
+      <br />
+
+      <p >
+        What aspect of the product por service were you least satisfied by?
+      </p>
+      <div class="flex">
+        <div class="item">
+          <input
+            class="radioitem"
+            type="radio"
+            id="quality"
+            name="mostfav"
+            value="quality"
+          />
+          <label for="quality">Quality</label><br />
+          <input
+            class="radioitem"
+            type="radio"
+            id="CustomerService"
+            name="mostfav"
+            value="CustomerService"
+          />
+          <label for="CustomerService">Customer Service</label><br />
+        </div>
+        <div class="item">
+          <input
+            class="radioitem"
+            type="radio"
+            id="price"
+            name="mostfav"
+            value="price"
+          />
+          <label for="price">Price</label><br />
+          <input
+            class="radioitem"
+            type="radio"
+            id="insOrUse"
+            name="mostfav"
+            value="insOrUse"
+          /><label for="insOrUse">Installation or first use experience</label
+          ><br /><br />
+        </div>
+      </div>
+    
+    <br />
+    <!--Here is the comment block followed by the submit button-->
+    <p>Additional comment</p>
+    <textarea
+      id="comment"
+      name="comment"
+      rows="10"
+      cols="60"
+      placeholder="type here.."
+    ></textarea>
+    <div class="button">
+      
+        <input class="btn" type="submit" name="submit" id="submit" />
+      
+    </div></div>
+    <!--the end-->
+  </body>
+</html>
